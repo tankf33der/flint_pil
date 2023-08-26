@@ -5,7 +5,7 @@
 #include "qsieve.h"
 
 
-int main(void)
+int main(int argc, char *argv[])
 {
 	fmpz_factor_t factors;
 	fmpz_t n;
@@ -14,7 +14,7 @@ int main(void)
 	fmpz_init(n);
 
 
-	fmpz_set_str(n, "123344545454019845440983345568719283791827391872398129183712198719879331117512525125311931711", 10);
+	fmpz_set_str(n, argv[1], 10);
 	qsieve_factor(factors, n);
 	fmpz_factor_print(factors);
 	printf("\n");

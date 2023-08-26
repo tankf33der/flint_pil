@@ -1,3 +1,3 @@
 all:
-	gcc demo.c -I /usr/include/flint -lflint -o demo.out
+	gcc qsieve.c -I /usr/include/flint -lflint -o qsieve.out
 

@@ -19,14 +19,11 @@ int main(void)
 
 	fmpz_set_str(n, "123344545454019845440983345568719283791827391872398129183712198719879331117512525125311931711", 10);
 
-	// qsieve_factor(factors, n);
 	fmpz_factor_ecm(factors, curves, B1, B2, &state, n);
 
-	// fmpz_factor_print(factors);
 	printf("\n");
 
 
-	// fmpz_factor_clear(factors);
 	fmpz_clear(n);
 	return 0;
 }
